@@ -19,10 +19,12 @@ useEffect(() => {
 },[]);
   return (
     <div className={`App ${isday? 'dayLight' : '' }`}>
+    <div>
     {
       isfriday? <Lasani />  : <span>Today is Friday Restorant is closed!</span>
     }
-      <button onClick={()=>setIsday(!isday)}>Color changer</button>
+    </div><br/>
+    <button style={{backgroundColor:'darkgreen',color:'white',cursor:'pointer'}} onClick={()=>setIsday(!isday)}>Color changer</button>
     </div>
   );
 }
