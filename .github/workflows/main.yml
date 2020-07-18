@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: reacthelloworld
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -43,4 +43,4 @@ jobs:
     - name: Installing Surge
       run: npm install --global surge
     - name: Deploying Surge
-      run: surge ./ http://breakable-carpenter.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ breakable-carpenter.surge.sh --token ${{secrets.SURGE_TOKEN}}
