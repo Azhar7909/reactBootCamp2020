@@ -22,7 +22,7 @@ useEffect(() => {
     {
       isfriday? <Lasani />  : <span>Today is Friday Restorant is closed!</span>
     }
-      
+      <button onClick={()=>setIsday(!isday)}>Color changer</button>
     </div>
   );
 }
