@@ -3,7 +3,7 @@ import './App.css';
 import Dinner from './Dinner';
 
 function Lasani() {
-  const [counter1, setCounter1] = useState(0);
+  let [counter1, setCounter1] = useState(0);
   const [counter2, setCounter2] = useState(0);
   const [counter3, setCounter3] = useState(0);
   const [price1, setPrice1] = useState(0);
@@ -14,11 +14,11 @@ function Lasani() {
   
   function service1() {
       const pr=110
-      const price1 = (counter1+1) * pr;
-      setCounter1(counter1+1)
+      setCounter1(++counter1)
+      const price1 = (counter1) * pr;
       setPrice1(price1)
       setTotalPrice(price1+price2+price3)
-      setTotalServing((counter1+1)+counter2+counter3)
+      setTotalServing(counter1+counter2+counter3)
       
   }
   function service2() {

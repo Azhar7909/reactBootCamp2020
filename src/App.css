@@ -1,8 +1,12 @@
-.Lasani {
+.Lasani,.App {
   text-align: center;
   display: flex;
   justify-content: center;
   margin-top: 15px;
+}
+.dayLight{
+  background-color: #ff8000;
+  color: aliceblue;
 }
 .container{
   width: 600px;
