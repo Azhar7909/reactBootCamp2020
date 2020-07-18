@@ -43,4 +43,4 @@ jobs:
     - name: Installing Surge
       run: npm install --global surge
     - name: Deploying Surge
-      run: surge ./ breakable-carpenter.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build breakable-carpenter.surge.sh --token ${{secrets.SURGE_TOKEN}}
