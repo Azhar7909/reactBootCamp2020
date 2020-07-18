@@ -27,10 +27,6 @@ jobs:
         node-version: 14
 
     # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
     - name: GitHub Action for Yarn
       uses: Borales/actions-yarn@v2.3.0
       with:
@@ -43,5 +39,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Installing Surge
       run: npm install --global surge
+
     - name: Deploying Surge
       run: surge ./build http://breakable-carpenter.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
