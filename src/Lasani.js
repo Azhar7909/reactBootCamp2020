@@ -38,7 +38,7 @@ function Lasani() {
       setTotalServing(counter1+counter2+(counter3+1))
   }
   
-
+  
   return (
     <div className="Lasani">
       <div className="container">
